@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     private void getStorageStatsForUid() {
         StorageStatsManager statsManager = getSystemService(StorageStatsManager.class);
         int systemUid = 1000;
@@ -77,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+    
     private void getStorageStatsForUser() {
         StorageStatsManager statsManager = getSystemService(StorageStatsManager.class);
         UserHandle user = android.os.Process.myUserHandle();
